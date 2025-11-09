@@ -1,5 +1,15 @@
 # Physics Wallah Student Experience Survey & Insights
 
+<!-- Badges -->
+[![CI](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions)
+[![License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE)
+[![Data License: CC BY-NC-ND 4.0](https://img.shields.io/badge/Data%20License-CC%20BY--NC--ND%204.0-lightgrey.svg)](DATA_LICENSE.md)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](requirements.txt)
+[![Tests](https://img.shields.io/github/actions/workflow/status/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/ci.yml?label=tests)](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights.svg)](../../commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights.svg)](../../)
+[![Maintained](https://img.shields.io/badge/Maintained-Yes-success.svg)](../../)
+
 [![CI](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](requirements.txt)
@@ -10,6 +20,8 @@ A compact, real-world research project analyzing feedback from 100 students abou
 - Original survey form: https://forms.gle/45jCQ7ntKWpYTY6v8
 
 > Important: This repository is for educational demonstration. Do not redistribute any survey data. See Data Usage & Privacy below and `DATA_POLICY.md`.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/blob/main/notebooks/analysis.ipynb)
 
 ## Highlights
 - 100 respondents surveyed via Google Forms
