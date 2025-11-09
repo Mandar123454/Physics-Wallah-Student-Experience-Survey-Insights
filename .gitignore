@@ -19,3 +19,21 @@ yarn-error.log*
 __pycache__/
 *.pyc
 node_modules/
+
+# Data & artifacts (keep sensitive data out of git)
+data/**
+!data/README.md
+artifacts/**
+*.xlsx
+*.csv
+*.parquet
+*.arrow
+*.feather
+*.png
+*.svg
+*.pdf
+*.pptx
+
+# Virtual envs
+.venv/
+venv/

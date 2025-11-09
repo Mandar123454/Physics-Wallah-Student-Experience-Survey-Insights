@@ -4,10 +4,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](requirements.txt)
 
-A compact, real-world research project analyzing feedback from 100 students about their experience with the Physics Wallah platform. The repository includes the original Google Form link, the raw response sheet (Excel), a polished slide deck, and a concise PDF report—designed to showcase end-to-end data collection, analysis, and presentation.
+A compact, real-world research project analyzing feedback from 100 students about their experience with the Physics Wallah platform. The repository includes the original Google Form link, a polished slide deck, and a concise PDF report—designed to showcase end-to-end data collection, analysis, and presentation.
 
 - View everything in one place (Drive): https://drive.google.com/drive/folders/1Ct4zSFsgRAWPj04L74Yg340o1TjY0YEF
 - Original survey form: https://forms.gle/45jCQ7ntKWpYTY6v8
+
+> Important: This repository is for educational demonstration. Do not redistribute any survey data. See Data Usage & Privacy below and `DATA_POLICY.md`.
 
 ## Highlights
 - 100 respondents surveyed via Google Forms
@@ -16,7 +18,6 @@ A compact, real-world research project analyzing feedback from 100 students abou
 - Clear, reproducible approach for survey-based analysis
 
 ## Repository contents
-- `Physics Wallah Survey  (Responses).xlsx` — Raw responses exported from Google Forms (Excel)
 - `Physics Wallah Survey.pptx` — Slide deck summarizing approach and insights
 - `Project Report PW.pdf` — Concise report suitable for quick review
 - `Google Form Link.txt` — Short text file with the live survey link
@@ -39,7 +40,7 @@ Learners engage with Physics Wallah for exam prep and conceptual understanding. 
 - Study patterns: usage frequency, device preferences
 - Open-ended feedback themes
 
-> Note: This repository doesn’t include personally identifiable information. Aggregated insights are communicated via charts and summary text.
+> Note: The code attempts to drop likely PII during processing. Aggregated insights are communicated via charts and summary text.
 
 ## How to explore
  - For code-based workflow: see the notebook in `notebooks/analysis.ipynb` or run the script in `scripts/clean_and_analyze.py`
@@ -74,20 +75,20 @@ pytest -q
 
 
 
-## Data & privacy
-- The code removes likely PII fields (e.g., name, email, phone) during processing.
-- The sample cleaned CSV (`data/cleaned_responses.csv`) is illustrative; replace with your fully cleaned export if needed.
+## Data Usage & Privacy
+- Educational-use only: Do not copy, publish, or redistribute any survey data without explicit written permission. See `DATA_LICENSE.md`.
+- The code removes likely PII fields (e.g., name, email, phone) during processing, but you must still treat all data as sensitive.
+- Keep any local raw/cleaned data files private. Avoid committing them—see `CONTRIBUTING.md` and `.gitignore`.
+- If you believe any sensitive content was inadvertently published, please open a takedown request.
 
-## Contributing & license
+## Contributing & License
 - Contributions welcome—see `CONTRIBUTING.md`.
-- Licensed under the MIT License—see `LICENSE`.
+- Code: MIT License (see `LICENSE`).
+- Data: CC BY-NC-ND 4.0 (Non-Commercial, No Derivatives). See `DATA_LICENSE.md` and `DATA_POLICY.md`.
 
 ## Code of Conduct
 Please follow our community expectations in `CODE_OF_CONDUCT.md`. Be respectful, constructive, and protect participant privacy. Violations may result in issue/PR moderation.
 - No personally identifiable information is shared in this repository.
-
-## License
-No license explicitly set. If you’d like broad reuse, consider adding `MIT` or `CC BY 4.0`. I can add this on request.
 
 ## Acknowledgements
 Thanks to all student respondents who contributed their time and feedback.

@@ -42,5 +42,4 @@ jobs:
           name: analysis-artifacts
           path: |
             artifacts/
-            data/cleaned_responses.csv
           if-no-files-found: warn

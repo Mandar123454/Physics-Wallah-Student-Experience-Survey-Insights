@@ -23,7 +23,14 @@ Thanks for your interest in improving this survey and analysis project! Here’s
 - Commit meaningful changes; avoid committing huge intermediate artifacts.
 
 ## Data ethics
-- Do not upload any personally identifiable information (PII).
-- Ensure all visualizations respect respondent anonymity.
+### Data safety
+- Do not upload any raw or cleaned survey data to the repository or PRs.
+- Keep raw exports (Excel/CSV) local. The `.gitignore` excludes common data formats and the `data/` folder.
+- Ensure all visualizations respect respondent anonymity; avoid very small groups that could reveal identities.
+- If you accidentally committed sensitive files, contact the maintainer to remove them and consider a history rewrite.
+
+### Tests & examples
+- Tests use synthetic in-memory dataframes; no real data is required.
+- If you contribute examples, ensure they are fully synthetic.
 
 Thank you for contributing!
