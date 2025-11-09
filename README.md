@@ -105,17 +105,6 @@ pytest -q
 - Data: CC BY-NC-ND 4.0 (Non-Commercial, No Derivatives). See `DATA_LICENSE.md` and `DATA_POLICY.md`.
  - Project Overview Page: open `index.html` locally or host via GitHub Pages.
 
-## Deployment (GitHub Pages)
-- Ensure these files exist in the repo root: `index.html`, `404.html`, `.nojekyll`.
-- In GitHub: `Settings` → `Pages` → Source: `Deploy from a branch`.
-- Choose Branch: `main`; Folder: `/` (root); click `Save`.
-- Wait 1–2 minutes for the `pages-build-deployment` to finish.
-- Your site will be available at:
-	- `https://Mandar123454.github.io/Physics-Wallah-Student-Experience-Survey-Insights/`
-- Optional:
-	- `Settings` → `Pages`: enforce HTTPS.
-	- Add a custom domain (and CNAME) if needed.
-	- Re-deploy by pushing to `main`; the deploy badge above shows status.
 
 ## Code of Conduct
 Please follow our community expectations in `CODE_OF_CONDUCT.md`. Be respectful, constructive, and protect participant privacy. Violations may result in issue/PR moderation.
