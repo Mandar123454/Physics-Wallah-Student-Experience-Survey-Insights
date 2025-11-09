@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Physics Wallah Student Experience Survey – Overview</title>
+<meta name="description" content="Educational survey analysis: methodology, policies, and reproducible workflow." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%231e3a8a'/%3E%3Ctext x='50%' y='55%' font-size='60' text-anchor='middle' fill='white' font-family='Arial'%3EPW%3C/text%3E%3C/svg%3E" />
+<style>
+:root {
+  --bg: #0f172a;
+  --panel: #1e293b;
+  --accent: #2563eb;
+  --accent-grad: linear-gradient(135deg,#1d4ed8,#3b82f6 60%,#60a5fa);
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --danger: #dc2626;
+  --radius: 14px;
+  --shadow: 0 8px 24px -6px rgba(0,0,0,.5);
+}
+html,body {margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.45;}
+header {padding:56px 32px 40px;background:radial-gradient(circle at 30% 20%,#334155,#0f172a 80%);}
+header h1 {margin:0;font-size:clamp(2.2rem,4.5vw,3.6rem);background:var(--accent-grad);-webkit-background-clip:text;color:transparent;font-weight:700;letter-spacing:.5px;}
+header p {max-width:760px;font-size:1.05rem;color:var(--muted);margin:18px 0 0;}
+main {max-width:1240px;margin:-40px auto 80px;padding:0 32px;}
+.grid {display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+.card {background:var(--panel);border-radius:var(--radius);padding:24px 24px 28px;position:relative;box-shadow:var(--shadow);overflow:hidden;}
+.card h2 {margin:0 0 14px;font-size:1.25rem;letter-spacing:.3px;display:flex;align-items:center;gap:8px;}
+.small {font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:4px;}
+.badges {display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px;}
+.badges a, .pill {background:#334155;padding:6px 12px;border-radius:40px;font-size:.7rem;font-weight:600;letter-spacing:.05em;text-decoration:none;color:var(--text);border:1px solid #475569;}
+.badges a:hover {background:#475569;}
+.accent-link {color:#3b82f6;text-decoration:none;font-weight:600;}
+.accent-link:hover {text-decoration:underline;}
+ul {margin:0;padding-left:20px;}
+section ul li {margin-bottom:6px;}
+a {color:#60a5fa;}
+footer {text-align:center;padding:48px 32px;color:var(--muted);font-size:.8rem;}
+hr {border:none;border-top:1px solid #334155;margin:32px 0;}
+.notice {background:#1e293b;border:1px solid #334155;padding:16px 18px;border-radius:12px;font-size:.85rem;color:var(--muted);}
+.warning {border-left:6px solid var(--danger);padding-left:12px;}
+.flex {display:flex;flex-direction:column;gap:10px;}
+.code {font-family:SFMono-Regular,Consolas,Menlo,monospace;background:#0f1e33;padding:2px 6px;border-radius:6px;font-size:.75rem;}
+.details summary {cursor:pointer;font-weight:600;color:#fff;}
+.details {background:#142033;padding:14px 18px;border-radius:10px;margin-top:10px;}
+.tagline {font-size:.9rem;font-weight:500;color:#e2e8f0;margin-top:4px;}
+.button-bar {display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 4px;}
+.button-bar a {text-decoration:none;background:var(--accent-grad);color:#fff;padding:10px 18px;border-radius:10px;font-size:.85rem;font-weight:600;box-shadow:0 4px 12px -2px rgba(0,0,0,.4);transition:.25s;}
+.button-bar a:hover {transform:translateY(-3px);}
+.logoMark {position:absolute;right:-20px;top:-20px;font-size:160px;font-weight:800;opacity:.04;pointer-events:none;}
+@media (max-width:720px){header{padding:52px 22px;}main{padding:0 22px;margin-top:-32px;} .grid{gap:24px;} .card{padding:22px 20px 24px;} }
+</style>
+</head>
+<body>
+<header>
+  <h1>Physics Wallah Student Experience Survey</h1>
+  <p class="tagline">Educational research project — reproducible workflow, anonymization strategy, ethical data handling, and insight communication.</p>
+  <p>This page summarizes the project scope, methodology, policies, and provides quick launch points for code, analysis, and participation intake.</p>
+  <div class="button-bar">
+    <a href="Google Form Link.txt" target="_blank" rel="noopener">Survey Form Link</a>
+    <a href="notebooks/analysis.ipynb" target="_blank" rel="noopener">Notebook (raw)</a>
+    <a href="https://colab.research.google.com/github/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/blob/main/notebooks/analysis.ipynb" target="_blank" rel="noopener">Open in Colab</a>
+    <a href="scripts/clean_and_analyze.py" target="_blank" rel="noopener">Core Script</a>
+    <a href="DATA_POLICY.md" target="_blank" rel="noopener">Data Policy</a>
+    <a href="DATA_LICENSE.md" target="_blank" rel="noopener">Data License</a>
+    <a href="LICENSE" target="_blank" rel="noopener">MIT Code License</a>
+  </div>
+</header>
+<main>
+  <div class="grid">
+    <div class="card" id="overview">
+      <div class="logoMark">PW</div>
+      <h2>Overview</h2>
+      <p>Survey of 100 learner experiences with the Physics Wallah platform. Focus areas include satisfaction, usability, content quality, value, recommendation likelihood, and open-ended feedback sentiment.</p>
+      <ul>
+        <li>100 structured responses (not publicly redistributed)</li>
+        <li>Anonymization pipeline drops likely PII patterns (email, phone, name, etc.)</li>
+        <li>Automated summary + figures produced via Python script</li>
+      </ul>
+    </div>
+    <div class="card" id="workflow">
+      <h2>Workflow & Reproducibility</h2>
+      <ol style="margin:0;padding-left:20px;">
+        <li>Design form (Google Forms)</li>
+        <li>Collect responses (private)</li>
+        <li>Export Excel → local processing</li>
+        <li>Run <code class="code">scripts/clean_and_analyze.py</code></li>
+        <li>Generate <code class="code">artifacts/summary.md</code> + figures</li>
+        <li>Review & share aggregated insights only</li>
+      </ol>
+      <p class="small">Command (local): <code class="code">python scripts/clean_and_analyze.py</code></p>
+    </div>
+    <div class="card" id="privacy">
+      <h2>Data Usage & Privacy</h2>
+      <div class="notice warning">
+        <strong>Sensitive Educational Data.</strong> Not for redistribution. Treat all copies as confidential research material.
+      </div>
+      <ul>
+        <li>No direct identifiers should be committed (names, emails, phones).</li>
+        <li>Data license: <strong>CC BY-NC-ND 4.0</strong> (non-commercial, no derivatives).</li>
+        <li>If a sensitive file leaks, open an issue tagged <code class="code">[PRIVACY]</code>.</li>
+        <li>Never attempt re-identification or merging with external datasets.</li>
+      </ul>
+      <p>See full policy: <a class="accent-link" href="DATA_POLICY.md">DATA_POLICY.md</a></p>
+    </div>
+    <div class="card" id="metrics">
+      <h2>Key Components</h2>
+      <ul>
+        <li><code class="code">clean_and_analyze.py</code>: orchestrates anonymization + metrics.</li>
+        <li>Basic stats (counts, mean, std, quartiles).</li>
+        <li>NPS-style promoter/detractor classification (scaled if needed).</li>
+        <li>Optional sentiment (TextBlob) for open text, if installed.</li>
+        <li>Seaborn visual distributions & categorical counts.</li>
+      </ul>
+      <p class="small">Real metrics intentionally omitted here; regenerate locally.</p>
+    </div>
+    <div class="card" id="tech">
+      <h2>Tech Stack</h2>
+      <div class="badges">
+        <span class="pill">Python 3.11</span>
+        <span class="pill">pandas</span>
+        <span class="pill">seaborn</span>
+        <span class="pill">matplotlib</span>
+        <span class="pill">TextBlob (optional)</span>
+        <span class="pill">openpyxl</span>
+      </div>
+      <p>Dependencies captured in <a href="requirements.txt">requirements.txt</a> and dev test tools in <a href="requirements-dev.txt">requirements-dev.txt</a>.</p>
+    </div>
+    <div class="card" id="contrib">
+      <h2>Contributing</h2>
+      <ul>
+        <li>Fork → branch → pull request.</li>
+        <li>Avoid committing any raw or cleaned real survey data.</li>
+        <li>Add tests around new transformation logic.</li>
+        <li>Respect Code of Conduct; be constructive.</li>
+      </ul>
+      <p>Guide: <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> • Conduct: <a href="CODE_OF_CONDUCT.md">CODE_OF_CONDUCT.md</a></p>
+    </div>
+    <div class="card" id="licenses">
+      <h2>Licenses</h2>
+      <ul>
+        <li><strong>Code:</strong> MIT (permissive reuse)</li>
+        <li><strong>Data:</strong> CC BY-NC-ND 4.0 (no derivatives / non-commercial)</li>
+      </ul>
+      <p>Attribution example: <em>"Physics Wallah Student Experience Survey (2025) – Mandar, GitHub repository."</em></p>
+    </div>
+    <div class="card" id="run">
+      <h2>Quick Start</h2>
+      <div class="details">
+        <summary>Install & Execute</summary>
+        <pre style="white-space:pre-wrap;font-size:.75rem;line-height:1.35;background:#0f1e33;padding:12px;border-radius:8px;overflow:auto;">pip install -r requirements.txt
+python scripts/clean_and_analyze.py
+# results: artifacts/summary.md + artifacts/figures/*</pre>
+      </div>
+      <div class="details">
+        <summary>Run Tests</summary>
+        <pre style="white-space:pre-wrap;font-size:.75rem;line-height:1.35;background:#0f1e33;padding:12px;border-radius:8px;overflow:auto;">pip install -r requirements-dev.txt
+pytest -q</pre>
+      </div>
+    </div>
+    <div class="card" id="disclaimer">
+      <h2>Disclaimer</h2>
+      <p>This repository is educational. It does not claim official endorsement by Physics Wallah. Metrics shown in public artifacts are aggregated and anonymized; raw datasets remain private. Use at your own risk and follow all ethical guidelines.</p>
+    </div>
+  </div>
+  <hr />
+  <div class="notice">
+    <strong>Need expanded permission?</strong> Open an issue describing intended usage (academic citation, method comparison, etc.). Commercial or derivative data use requires prior written approval.
+  </div>
+</main>
+<footer>
+  &copy; 2025 Mandar • Educational Use Only • MIT (Code) / CC BY-NC-ND (Data)
+</footer>
+</body>
+</html>

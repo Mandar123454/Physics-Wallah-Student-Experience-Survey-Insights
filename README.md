@@ -33,6 +33,7 @@ A compact, real-world research project analyzing feedback from 100 students abou
 - `Physics Wallah Survey.pptx` — Slide deck summarizing approach and insights
 - `Project Report PW.pdf` — Concise report suitable for quick review
 - `Google Form Link.txt` — Short text file with the live survey link
+- `index.html` — Rich, single-page overview (policies, workflow, quick start)
 
 ## Problem & motivation
 Learners engage with Physics Wallah for exam prep and conceptual understanding. This project measures the student experience—content quality, platform usability, perceived value, and overall satisfaction—to inform actionable improvements and highlight strengths that matter to students.
@@ -97,6 +98,7 @@ pytest -q
 - Contributions welcome—see `CONTRIBUTING.md`.
 - Code: MIT License (see `LICENSE`).
 - Data: CC BY-NC-ND 4.0 (Non-Commercial, No Derivatives). See `DATA_LICENSE.md` and `DATA_POLICY.md`.
+ - Project Overview Page: open `index.html` locally or host via GitHub Pages.
 
 ## Code of Conduct
 Please follow our community expectations in `CODE_OF_CONDUCT.md`. Be respectful, constructive, and protect participant privacy. Violations may result in issue/PR moderation.
