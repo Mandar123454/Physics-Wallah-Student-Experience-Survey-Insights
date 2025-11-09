@@ -29,7 +29,10 @@ jobs:
           python scripts/clean_and_analyze.py || true
 
       - name: Run tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
+          echo "Using PYTHONPATH=$PYTHONPATH"
           pytest -q
 
       - name: Upload artifacts
