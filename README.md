@@ -9,6 +9,8 @@
 [![Last Commit](https://img.shields.io/github/last-commit/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights.svg)](../../commits/main)
 [![Repo Size](https://img.shields.io/github/repo-size/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights.svg)](../../)
 [![Maintained](https://img.shields.io/badge/Maintained-Yes-success.svg)](../../)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FMandar123454.github.io%2FPhysics-Wallah-Student-Experience-Survey-Insights%2F&label=pages)](https://Mandar123454.github.io/Physics-Wallah-Student-Experience-Survey-Insights/)
+[![Pages Deployments](https://img.shields.io/github/deployments/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/github-pages?label=deploy)](../../deployments/activity_log?environment=github-pages)
 
 [![CI](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -22,6 +24,8 @@ A compact, real-world research project analyzing feedback from 100 students abou
 > Important: This repository is for educational demonstration. Do not redistribute any survey data. See Data Usage & Privacy below and `DATA_POLICY.md`.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mandar123454/Physics-Wallah-Student-Experience-Survey-Insights/blob/main/notebooks/analysis.ipynb)
+
+Live site: https://Mandar123454.github.io/Physics-Wallah-Student-Experience-Survey-Insights/
 
 ## Highlights
 - 100 respondents surveyed via Google Forms
@@ -100,6 +104,18 @@ pytest -q
 - Code: MIT License (see `LICENSE`).
 - Data: CC BY-NC-ND 4.0 (Non-Commercial, No Derivatives). See `DATA_LICENSE.md` and `DATA_POLICY.md`.
  - Project Overview Page: open `index.html` locally or host via GitHub Pages.
+
+## Deployment (GitHub Pages)
+- Ensure these files exist in the repo root: `index.html`, `404.html`, `.nojekyll`.
+- In GitHub: `Settings` → `Pages` → Source: `Deploy from a branch`.
+- Choose Branch: `main`; Folder: `/` (root); click `Save`.
+- Wait 1–2 minutes for the `pages-build-deployment` to finish.
+- Your site will be available at:
+	- `https://Mandar123454.github.io/Physics-Wallah-Student-Experience-Survey-Insights/`
+- Optional:
+	- `Settings` → `Pages`: enforce HTTPS.
+	- Add a custom domain (and CNAME) if needed.
+	- Re-deploy by pushing to `main`; the deploy badge above shows status.
 
 ## Code of Conduct
 Please follow our community expectations in `CODE_OF_CONDUCT.md`. Be respectful, constructive, and protect participant privacy. Violations may result in issue/PR moderation.
