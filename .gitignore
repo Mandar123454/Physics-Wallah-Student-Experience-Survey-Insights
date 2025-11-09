@@ -1,0 +1,21 @@
+# OS & editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*$RECYCLE.BIN/
+
+# Office temp/lock files
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python/Node (in case of future scripts)
+__pycache__/
+*.pyc
+node_modules/
